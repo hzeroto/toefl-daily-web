@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172e29">
+  <meta name="referrer" content="same-origin">
+  <title>TOEFL Daily · 每日模考</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./web/entry.mjs"></script>
+</head>
+<body>
+  <div id="app"><div class="loading">正在打开你的练习空间…</div></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <input type="file" id="pack-file" accept=".json,.toeflpack,application/json" hidden>
+  <dialog id="confirm-dialog"><form method="dialog"><span class="eyebrow">EXAM CONTROL</span><h2 id="confirm-title"></h2><p id="confirm-description"></p><div class="dialog-actions"><button value="cancel" class="secondary">继续作答</button><button value="ok" class="primary">确认</button></div></form></dialog>
+</body>
+</html>
